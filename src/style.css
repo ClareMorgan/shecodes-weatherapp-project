@@ -55,17 +55,17 @@ main {
   display: flex;
 }
 .temperature-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 92px;
+  height: 92px;
 }
 .temperature-value {
   font-size: 88px;
+  line-height: 88px;
   font-weight: bold;
-  margin-left: 10px;
 }
 .temperature-unit {
   font-size: 28px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 footer {
   border-top: 1px solid #d5eeff;
