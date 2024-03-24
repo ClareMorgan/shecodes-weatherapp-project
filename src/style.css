@@ -16,7 +16,7 @@ body {
   border-radius: 16px;
 }
 header {
-  border-bottom: 1px solid #c7eafe;
+  border-bottom: 1px solid #e8f0fe;
   padding: 0 0 30px 0;
 }
 .search-form-input {
@@ -51,6 +51,7 @@ main {
   justify-content: space-between;
 }
 .weather-app-city {
+  color: #3e386d;
   margin: 0;
   font-size: 38px;
   line-height: 48px;
@@ -71,11 +72,13 @@ main {
   height: 110px;
 }
 .temperature-value {
+  color: #3e386d;
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
 }
 .temperature-unit {
+  color: #3e386d;
   font-size: 28px;
   margin-top: 10px;
 }
@@ -109,7 +112,7 @@ main {
   padding: 5px;
 }
 footer {
-  border-top: 1px solid #d5eeff;
+  border-top: 1px solid #e8f0fe;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
@@ -123,4 +126,90 @@ a {
 }
 a:hover {
   color: #e8630a;
+}
+.change-theme-button {
+  display: block;
+  margin: 0 auto;
+  background: #3e386d;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #3e386d;
+  font-size: 16px;
+  transition: all 200ms ease;
+}
+.change-theme-button:hover {
+  cursor: pointer;
+  background: #e8f0fe;
+  color: #3e386d;
+  border: 1px solid #3e386d;
+}
+
+.dark {
+  background: radial-gradient(
+    circle,
+    rgb(62, 56, 109) 0%,
+    rgb(46, 43, 66) 0%,
+    rgb(62, 56, 109) 84%
+  );
+}
+.dark .weather-app {
+  background: #6861a8;
+  color: #e8f0fe;
+}
+.dark .search-form-input {
+  background: #3e386d;
+  color: #c0bce2;
+}
+.dark ::placeholder {
+  color: #c0bce2;
+}
+.dark .search-form-button {
+  background: #c0bce2;
+  color: #3e386d;
+  border: 1px solid #c0bce2;
+  transition: all 200ms ease;
+}
+.dark .search-form-button:hover {
+  background: #3e386d;
+  color: #c0bce2;
+  cursor: pointer;
+  border: 1px solid #c0bce2;
+}
+.dark header {
+  border-bottom: 1px solid #3e386d;
+}
+.dark .weather-app-city,
+.dark .temperature-value,
+.dark .temperature-unit {
+  color: #e0def2;
+}
+.dark .weather-app-details,
+.dark .forecast-temperatures {
+  color: #e8f0fe;
+}
+.dark .weather-app-details strong {
+  color: #f9c720;
+}
+.dark .change-theme-button {
+  background: #c0bce2;
+  color: #3e386d;
+  border: 1px solid #c0bce2;
+}
+.dark .change-theme-button:hover {
+  background: #3e386d;
+  color: #c0bce2;
+  border: 1px solid #c0bce2;
+}
+
+.dark footer {
+  color: #e8f0fe;
+  border-top: 1px solid #3e386d;
+}
+.dark a {
+  color: rgba(249, 199, 32, 0.8);
+  transition: all 200ms ease;
+}
+.dark a:hover {
+  color: #f9c720;
 }
