@@ -101,11 +101,7 @@ searchCity("Tokyo");
 
 function changeTheme() {
   let body = document.querySelector("body");
-  if (body.classList.contains("dark")) {
-    body.classList.remove("dark");
-  } else {
-    body.classList.add("dark");
-  }
+  body.classList.toggle("dark");
 }
 let changeThemeButton = document.querySelector(".change-theme-button");
 changeThemeButton.addEventListener("click", changeTheme);
