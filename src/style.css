@@ -129,7 +129,7 @@ a:hover {
 }
 .change-theme-button {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   background: #3e386d;
   color: white;
   padding: 15px;
@@ -212,4 +212,32 @@ a:hover {
 }
 .dark a:hover {
   color: #f9c720;
+}
+@media (max-width: 576px) {
+  .search-form-input {
+    width: 60%;
+    padding: 10px 15px;
+  }
+  .search-form-button {
+    padding: 10px 15px;
+    border: none;
+  }
+  .temperature-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .temperature-value {
+    font-size: 64px;
+    line-height: 1;
+  }
+  .temperature-unit {
+    font-size: 24px;
+  }
+  .weather-forecast {
+    max-width: 90%;
+  }
+  .forecast-icon {
+    width: 66px;
+    height: 66px;
+  }
 }
