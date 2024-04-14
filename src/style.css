@@ -214,6 +214,9 @@ a:hover {
   color: #f9c720;
 }
 @media (max-width: 576px) {
+  .weather-app {
+    margin: 20px auto;
+  }
   .search-form-input {
     width: 60%;
     padding: 10px 15px;
