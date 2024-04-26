@@ -40,16 +40,15 @@ a:hover {
 }
 .search-form-input {
   background: #e8f0fe;
-  border: none;
+  border: 1px solid #e8f0fe;
   border-radius: 6px;
-  width: 80%;
-  padding: 15px 20px;
+  padding: 10px 15px;
   font-size: 16px;
 }
 .search-form-button {
   background: #3e386d;
   color: white;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border-radius: 6px;
   border: 1px solid #3e386d;
   margin-left: 5px;
@@ -61,10 +60,6 @@ a:hover {
   color: #3e386d;
   cursor: pointer;
   border: 1px solid #3e386d;
-}
-.weather-app-data {
-  display: flex;
-  justify-content: space-between;
 }
 .weather-app-city {
   color: #3e386d;
@@ -216,6 +211,9 @@ a:hover {
   h1 {
     font-size: 28px !important;
   }
+  .weather-app-details {
+    font-size: 14px;
+  }
   .temperature-icon {
     width: 60px;
     height: 60px;
@@ -227,8 +225,8 @@ a:hover {
     width: 56px;
     height: 56px;
   }
-  .forecast-temperatures {
-    font-size: 12px;
+  .forecast-temperature-low {
+    display: none;
   }
 }
 @media (max-width: 576px) {
@@ -237,36 +235,30 @@ a:hover {
     padding: 15px;
   }
   .search-form-input {
-    width: 60%;
     padding: 10px 15px;
     font-size: 14px;
   }
   .search-form-button {
     padding: 10px 15px;
-    border: none;
     font-size: 14px;
+    border: none;
   }
-  .temperature-value {
-    font-size: 64px;
-    line-height: 1;
-  }
-  .temperature-icon {
-    width: 88px;
-    height: 88px;
-  }
-  .temperature-unit {
-    font-size: 24px;
-  }
-  .weather-forecast {
-    max-width: 90%;
-  }
+
   .forecast-icon {
     width: 66px;
     height: 66px;
   }
 }
 @media (max-width: 768px) {
-  .search-form-input {
-    width: 70%;
+  .temperature-value {
+    font-size: 52px;
+    line-height: 1;
+  }
+  .temperature-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .temperature-unit {
+    font-size: 24px;
   }
 }

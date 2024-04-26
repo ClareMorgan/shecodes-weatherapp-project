@@ -27,20 +27,26 @@
     <div class="container">
       <div class="weather-app">
         <header>
-          <form id="search-form" class="search-form">
-            <input
-              type="search"
-              placeholder="Enter a city..."
-              required
-              id="search-form-input"
-              class="search-form-input"
-            />
-            <input type="submit" value="Search" class="search-form-button" />
-          </form>
+          <div class="row">
+            <form id="search-form" class="search-form">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                required
+                id="search-form-input"
+                class="search-form-input col-8"
+              />
+              <input
+                type="submit"
+                value="Search"
+                class="search-form-button col-3"
+              />
+            </form>
+          </div>
         </header>
         <main>
-          <div class="weather-app-data">
-            <div>
+          <div class="row weather-app-data">
+            <div class="col-6 pe-0">
               <h1 id="weather-app-city" class="weather-app-city">Tokyo</h1>
               <p class="weather-app-details">
                 <span id="current-time"></span>, <span id="description"></span>
@@ -50,7 +56,7 @@
                 <strong id="wind-speed"></strong>
               </p>
             </div>
-            <div class="weather-app-temperature">
+            <div class="col-6 ps-0 weather-app-temperature">
               <div
                 id="temperature-icon"
                 class="temperature-icon img-fluid"
